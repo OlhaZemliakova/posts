@@ -11,4 +11,4 @@ Added navigation between the main page and the map page.
 
 Using the Pinia store.
 
-Deployed at [vercel]()
+Deployed at [vercel](posts-beryl.vercel.app)
