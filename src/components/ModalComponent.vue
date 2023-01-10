@@ -22,6 +22,8 @@ export default {
   methods: {
     close() {
       this.$emit("close");
+
+      this.inputContent = "";
     },
     save() {
       this.$emit("save", {
