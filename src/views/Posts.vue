@@ -7,9 +7,9 @@
         v-for="post in mainStore.getCurrentPageList"
         :key="post.id"
       >
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.body }}</p>
-        <p>{{ post.comments.length }}</p>
+        <h2 class="title">{{ post.title }}</h2>
+        <p class="description">{{ post.body }}</p>
+        <p>Number of commentators: {{ post.comments.length }}</p>
       </div>
       <PaginationComponent />
       <router-view />
@@ -46,7 +46,7 @@ export default {
 };
 </script>
   
-  <style>
+<style>
 .row {
   display: flex;
 }
@@ -59,6 +59,15 @@ export default {
   border: 2px solid green;
   border-radius: 8px;
   margin-bottom: 10px;
-  padding: 4px;
+  padding: 5px;
+}
+.title {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 </style>
