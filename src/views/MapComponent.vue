@@ -53,7 +53,6 @@ export default {
     openModal(event) {
       this.modalData = event.latlng;
       this.isOpen = true;
-      this.createMarker(event.latlng.lat, event.latlng.lng);
     },
     saveMarker(marker) {
       this.markers.push(marker);

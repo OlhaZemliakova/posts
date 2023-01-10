@@ -38,7 +38,7 @@ export default {
 
     return { mainStore };
   },
-  methods: {},
+
   async mounted() {
     await this.mainStore.fetchPosts();
     await this.mainStore.fetchComments();

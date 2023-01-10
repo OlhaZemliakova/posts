@@ -1,6 +1,6 @@
 # test-task-from-ukrghmi
 
-Create a SPA in Vue 3. The application shows a list of posts from API. Added the ability to filter posts by title.
+Create the SPA in Vue 3. The application shows a list of posts from API. Added the ability to filter posts by title.
 
 The application uses a library Chart.js. I created a graph that shows the number of characters in the post commenters' mail.
 
@@ -11,4 +11,4 @@ Added navigation between the main page and the map page.
 
 Using the Pinia store.
 
-Deployed at [vercel](posts-beryl.vercel.app)
+Deployed at [vercel](https://posts-beryl.vercel.app)
