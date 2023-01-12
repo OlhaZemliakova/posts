@@ -2,16 +2,19 @@
   <div class="row">
     <div class="col mr-15">
       <SearchComponent />
-      <div
-        class="post"
-        v-for="post in mainStore.getCurrentPageList"
-        :key="post.id"
-      >
-        <h2 class="title">{{ post.title }}</h2>
-        <p class="description">{{ post.body }}</p>
-        <p>Number of commentators: {{ post.comments.length }}</p>
+      <div v-if="mainStore.getCurrentPageList.length > 0">
+        <div
+          class="post"
+          v-for="post in mainStore.getCurrentPageList"
+          :key="post.id"
+        >
+          <h2 class="title">{{ post.title }}</h2>
+          <p class="description">{{ post.body }}</p>
+          <p>Number of commentators: {{ post.comments.length }}</p>
+        </div>
+        <PaginationComponent />
       </div>
-      <PaginationComponent />
+      <h2 v-else>Оops... there is no such post</h2>
       <router-view />
     </div>
     <div class="col">
