@@ -1,6 +1,6 @@
 # test-task-from-ukrghmi
 
-Create the SPA in Vue 3. The application shows a list of posts from API. Added the ability to filter posts by title.
+SPA in Vue 3. The application shows a list of posts from API. Added the ability to filter posts by title.
 
 The application uses a library Chart.js. I created a graph that shows the number of characters in the post commenters' mail.
 
